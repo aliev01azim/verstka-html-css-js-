@@ -1,0 +1,88 @@
+
+.logoImg{
+    display: block;
+     width: 240px;
+     margin: 0 auto;
+     position: relative;
+     z-index: 10000000;
+}
+.headerP{
+    display: inline;
+     float: right;
+      font-size: 18px;
+}
+.headerP2{
+    text-align: center;
+    font-weight: bold;
+}
+.mainP{
+    text-align: center;
+}
+.subMainP{
+    text-align: center;
+}
+.subMainP span{
+    font-weight: bold;
+}
+
+.first img{
+    width: 200px;
+    min-width: 200px;
+display: block;
+margin: 0 auto;
+}
+.first{
+    padding: 35px 0;
+    box-shadow: 0 0 0px white;
+    transition: 0.3s ;
+    transform: scale(1);
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+}
+.first:hover{
+    box-shadow: 0 0 10px lightgrey;
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.3s ;
+}
+  #particles-js{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .page-wrapper{
+    z-index: 2;
+  }
+  .box.feature {
+    position: relative;
+    z-index: 50000;
+    background-color: rgba(255,255,255,0);
+}
+  /* ---- stats.js ---- */
+  
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+  
