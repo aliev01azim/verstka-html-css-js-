@@ -1,0 +1,172 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/4cac0f5f2c.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<style>
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+  <div class="biggest">
+    <div class="leftbar">
+        <nav>
+            <h1>ОФД-НН</h1>
+            <li><a href="#" class="menu__item"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-bar-chart" aria-hidden="true"></i>Отчётность</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-suitcase" aria-hidden="true"></i>Организации</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-archive" aria-hidden="true"></i>Договоры</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-map-marker" aria-hidden="true"></i>Точки</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-briefcase" aria-hidden="true"></i>Кассы</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-plug" aria-hidden="true"></i>Подключение касс</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Очередь событий</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-pie-chart" aria-hidden="true"></i>Финансы</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-file-text" aria-hidden="true"></i>Документы</a></li>
+            <li><a href="#" class="menu__item"><i class="fa fa-line-chart" aria-hidden="true"></i>Мониторинг</a></li>
+            <li><a href="#">Link 10</a></li>
+          </nav>
+    </div>
+    <div class="rodak">
+        <div class="header">
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+            <h1>Названия Организации</h1>
+    </div>
+    <div class="content">
+      <div class="middle">
+        <div class="counting-sec">
+        <div class="inner-width">
+        <div class="col">
+        
+        <div class="num">564</div>
+        День
+        </div>
+      
+        <div class="col">
+      
+        <div class="num">83</div>
+        Недели
+        </div>
+      
+        <div class="col">
+       
+        <div class="num">375</div>
+        Месяц
+        </div>
+      
+      
+        <div class="col">
+       
+        <div class="num">375</div>
+        Квартал
+        </div>
+        <div class="col">
+       
+        <div class="num">326</div>
+        Год
+        </div>
+        </div>
+        </div>
+      
+      </div>
+      <div class="dfg">
+        <div class="canvas canvas1">
+          <figure class="highcharts-figure">
+          <h1>Пролонгация ФН</h1>
+            <div id="container"></div>
+          </figure>
+        </div>
+        <div class="canvas canvas2">
+          <h1>График подключения ККМ</h1>
+          <canvas id="speedCharrr" width="600" height="400"></canvas>
+        </div>
+        <!-- <div class="canvas canvas3">
+          <figure class="highcharts-figure">
+          <h1>Ключи активации</h1>
+          <div id="containerк"></div>
+      </figure>
+        </div>
+        <div class="canvas canvas4">
+          <figure class="highcharts-figure">
+          <h1>Новые кассы</h1>
+          <div id="containerd"></div>
+      </figure>
+        </div> -->
+      </div>
+    </div>
+    </div>
+    
+</div>
+
+
+  <script>
+   $(".num").counterUp({delay:10,time:1000});
+ </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<script src="js/glavnaya.js"></script>
+<script src="js/popup.js"></script>
+<script>
+  var speedCanvaaa = document.getElementById("speedCharrr");
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 16;
+
+var speedData = {
+  labels: ["2020","2021","2022","2023","2024","2025"],
+  datasets: [{
+    label: "чеки/за год",
+    data: ["1000000","4000000","2000000","4000000","3000000","2000000","4000000"],
+    backgroundColor: 'lightBlue',
+    pointBorderColor: 'orange',
+    pointBackgroundColor:'orange',
+    pointRadius: 5,
+    pointHoverRadius: 10,
+    pointHitRadius: 30,
+    pointBorderWidth: 2,
+    borderDash: [5, 5],
+  }]
+};
+
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 0,
+      fontColor: 'black'
+    }
+  }
+};
+
+var lineChart = new Chart(speedCanvaaa, {
+  type: 'line',
+  data: speedData,
+  options: chartOptions
+});
+</script>
+</body>
+</html>
+

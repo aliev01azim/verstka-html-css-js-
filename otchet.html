@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/4cac0f5f2c.js"></script>
+<style>
+.vertical-menu22 {
+    min-width: 240px;
+
+    overflow-y: auto;
+    background: #28256B;
+}
+
+.vertical-menu22 a {
+
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu22 a:hover {
+    background-color: #ccc;
+    color: white;
+}
+
+.vertical-menu22 a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.vertical-menu22 h1{
+  color: white;
+}
+.header{
+  float: left;
+
+}
+.wrapper{
+  display: flex;
+}
+.vertical-menu22{
+   min-height: 100%;
+
+}
+.header{
+    background: #00A2FF;
+    width: 100%;
+    max-height: 90px;
+ }
+ .header h1{
+  color: white;
+  margin-left: 50px;
+ }
+
+ .mdl-textfield__label {
+    bottom: 0;
+    color: rgba(0,0,0,.26);
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: -24px;
+    width: 100%;
+  
+    white-space: nowrap;
+    text-align: left;
+}
+
+.select{
+  position: relative;
+
+}
+
+.menu__item{
+
+
+}
+.menu__item i{
+  padding-right: 10px;
+}
+ul li{
+  list-style-type: none;
+ 
+
+}
+li{
+  color: #b7b7b7;
+  font-size: 16px;
+}
+
+li:hover{
+  color: white;
+}
+
+.container{
+  max-width: 500px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="wrapper">
+<div class="vertical-menu22" style="">
+  <div style="position: absolute;"></div>
+  <h1 style="text-align: center;">ОФД-НН</h1>
+<nav>
+  <ul>
+  <a href="#" class="menu__item"><li><i class="fa fa-home" aria-hidden="true"></i>Главная</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-bar-chart" aria-hidden="true"></i>Отчётность</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-suitcase" aria-hidden="true"></i>Организации</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-archive" aria-hidden="true"></i>Договоры</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-map-marker" aria-hidden="true"></i>Точки</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-briefcase" aria-hidden="true"></i>Кассы</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-plug" aria-hidden="true"></i>Подключение касс</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-calendar-o" aria-hidden="true"></i>Очередь событий</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-pie-chart" aria-hidden="true"></i>Финансы</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-file-text" aria-hidden="true"></i>Документы</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-line-chart" aria-hidden="true"></i>Мониторинг</li></a>
+  <a href="#">Link 10</a></li>
+ </ul>
+</nav>
+</div>
+
+<div class="header">
+ <div class="col-lg-12">
+  <h1>Названия Организации</h1>
+</div>
+</div>
+ 
+
+</div>
+</div>
+
+<div class="fsd" style="margin-left: 300px; margin-top: -460px;position: relative;">
+  <div class="container">
+  <div class="col-lg-6">
+    <p>Количество общих чеков (все)<span style="float: right;">25</span></p>
+     <p>Количество выданых чеков (организации)<span style="float: right;">25</span></p>
+     <p>Количество подключенных ККМ<span style="float: right;"><button id="showHideContent">Подробнее</button></p>
+  </div>
+
+
+
+<div id="content" style="display:none;">
+  <p style="border-bottom: 2px solid red;">25 ККМ <span style="float: right;"> За всё</span></p>
+     <p style="border-bottom: 2px solid red;">25 ККМ <span style="float: right;">За год</span></p>
+       <p style="border-bottom: 2px solid red;">25 ККМ <span style="float: right;">За месяц</span></p>
+         <p style="border-bottom: 2px solid red;">25 ККМ <span style="float: right;"> За неделю</span></p>
+           <p style="border-bottom: 2px solid red;">25 ККМ <span style="float: right;"> За день</span></p>
+</div>
+    <div class="col-md-6 col-sm-12 col-xs-12">                     
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Donut Chartsdfadsfasdfasd
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-line-chart"></div>
+                        </div>
+                    </div>            
+                </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+    </div>
+
+
+
+
+
+  </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#showHideContent").click(function () {
+        if ($("#content").is(":hidden")) {
+            $("#content").show("slow");
+        } else {
+            $("#content").hide("slow");
+        }
+        return false;
+    });
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
+

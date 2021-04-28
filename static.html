@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://use.fontawesome.com/4cac0f5f2c.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="biggest">
+        <div class="leftbar">
+            <nav>
+                <h1>ОФД-НН</h1>
+                <li><a href="#" class="menu__item"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-bar-chart" aria-hidden="true"></i>Отчётность</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-suitcase" aria-hidden="true"></i>Организации</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-archive" aria-hidden="true"></i>Договоры</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-map-marker" aria-hidden="true"></i>Точки</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-briefcase" aria-hidden="true"></i>Кассы</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-plug" aria-hidden="true"></i>Подключение касс</a>
+                </li>
+                <li><a href="#" class="menu__item"><i class="fa fa-calendar-o" aria-hidden="true"></i>Очередь
+                        событий</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-pie-chart" aria-hidden="true"></i>Финансы</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-file-text" aria-hidden="true"></i>Документы</a></li>
+                <li><a href="#" class="menu__item"><i class="fa fa-line-chart" aria-hidden="true"></i>Мониторинг</a>
+                </li>
+                <li><a href="#">Link 10</a></li>
+            </nav>
+        </div>
+        <div class="rodak">
+            <div class="header">
+                <h1>Названия Организации</h1>
+            </div>
+            <div class="content">
+                <div class="wrapper wrapperr">
+                    <form action="handler.php">
+                        <div class="polovina">
+                            <div class="input">
+                                <span class="pink">Тип *</span>
+                                <select name="type">
+                                    <option value="">АО</option>
+                                    <option value="">ДХО</option>
+                                    <option value="">ЗАО</option>
+                                    <option value="">ЗХО</option>
+                                    <option value="">ИП</option>
+                                    <option value="">КТ</option>
+                                    <option value="">МУП</option>
+                                    <option value="">ОАО</option>
+                                    <option value="">ОДО</option>
+                                    <option value="">ООО</option>
+                                    <option value="">ПТ</option>
+                                    <option value="">УП</option>
+                                    <option value="">ХТО</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <span class="pink">ИНН *</span>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input">
+                            <h5 class="h5">Краткое наименование компании</h5>
+                            <input type="text">
+                        </div>
+                        <div class="input">
+                            <h5 class="h5">Полное наименование компании *</h5>
+                            <input type="text">
+                        </div>
+                        <div class="input">
+                            <h5 class="h5">КПП *</h5>
+                            <input type="text">
+                        </div>
+                        <div class="polovina">
+                            <div class="input">
+                                <h5>ОГРН *</h5>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <h5>ОКПО *</h5>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <p class="title">ПОДПИСАНТ ДОГОВОРА</p>
+                        <div class="input">
+                            <h5>ФИО *</h5>
+                            <input type="text">
+                        </div>
+                        <div class="input">
+                            <h5>Должность *</h5>
+                            <input type="text">
+                        </div>
+                        <div class="input">
+                            <h5>Действует на основании *</h5>
+                            <select name="type">
+                                <option value="">Устав</option>
+                                <option value="">Доверенность</option>
+                            </select>
+                        </div>
+                        <p class="title">ЮРИДИЧЕСКИЙ АДРЕС</p>
+                        <div class="chetvert">
+                            <div class="input">
+                                <h5>Адрес *</h5>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <h5>Почтовый индекс *</h5>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <p class="title">ФАКТИЧЕСКИЙ АДРЕС</p>
+                        <div class="check">
+                            <input type="checkbox" class="cch">
+                            <span>Совпадает с юридическим адресом</span>
+                        
+                        <div class="chetvert tt">
+                            <div class="input">
+                                <h5>Адрес *</h5>
+                                <input type="text">
+                            </div>
+                            <div class="input">
+                                <h5>Почтовый индекс *</h5>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                        <p class="title">КОНТАКТНАЯ ИНФОРМАЦИЯ</p>
+                        <div class="polovina na">
+                            <div class="input">
+                                <span class="pink">Телефон *</span>
+                                <input type="tel" placeholder="+996">
+                            </div>
+                            <div class="input">
+                                <h5>Email *</h5>
+                                <input type="email">
+                            </div>
+                        </div>
+                        <p class="title">БАНКОВСКИЕ РЕКВИЗИТЫ</p>
+                        <div class="input">
+                            <span class="pink">Расчетный счет *</span>
+                            <input type="text">
+                        </div>
+                        <div class="input">
+                            <h5>БИК *</h5>
+                            <input type="text">
+                        </div>
+                        <div class="input">
+                            <h5>Банк</h5>
+                            <input type="text">
+                        </div>
+                        <div class="input">
+                            <h5>Корреспондентский час</h5>
+                            <input type="text">
+                        </div>
+                        <button>Сохранить</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/melkie.js"></script>
+</body>
+
+</html>
