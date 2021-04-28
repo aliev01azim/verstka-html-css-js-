@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <title>Нано-технология</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <div class="card-menu">
+      <div class="card-menu-close-menu"></div>
+      <div
+        class="card-menu-section card-menu-section-3 inactive"
+        data-section="3"
+      >
+        <div class="card-menu-menu-btn"></div>
+        <h2 class="card-menu-section-heading">Contact</h2>
+      </div>
+      <div
+        class="card-menu-section card-menu-section-4 inactive"
+        data-section="4"
+      >
+        <div class="card-menu-menu-btn"></div>
+        <h2 class="card-menu-section-heading">App</h2>
+        <div id="main">
+          <div id="cup">
+              <img src="img/13.png" id="img"/>
+              
+              <div id="shadow1"></div>
+              <div id="shadow2"></div>
+          </div>
+      </div>
+
+      <div class="flex">
+        <div id="text">Скачайте Nano
+          <br>
+          <div id="str"></div>
+          <a href="#">AppStore</a>
+          <a href="#">GooglePlay</a>
+        </div>
+      </div>
+      </div>
+      <div class="card-menu-section card-menu-section-1" data-section="1">
+        <div class="card-menu-menu-btn"></div>
+    <h2 class="card-menu-section-heading">Home</h2>
+    <main>
+      <div class="slider">
+          <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+          <nav>
+              <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
+              <a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
+          </nav>
+      </div>
+  </main>
+      </div>
+      <div class="card-menu-section card-menu-section-2 active" data-section="2">
+        <div class="card-menu-menu-btn"></div>
+        <h2 class="card-menu-section-heading" style="position: fixed;">About</h2>
+        <video class="myVideo" loop muted autoplay src="video/Animation Of Digital Human Face.mp4"></video>`
+        <div class="content">
+          <div class="container">
+            <br>
+            <br>       
+          <div class="text"></div>
+          <p class="vskok">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus inventore reprehenderit tenetur nisi! Laudantium quia recusandae dolore tenetur voluptate molestiae, exercitationem aliquam earum odio blanditiis, magnam ullam amet quas!
+          </p>
+          <h5 class="razrabotka">Разработка длится</h5>
+          <div class="time-counter form-row other-style">
+              <div class="days count col">
+                  <div class="num">38</div>
+                  <div class="label">Дней</div>
+              </div>
+              <div class="hours count col">
+                  <div class="num">13</div>
+                  <div class="label">Часов</div>
+              </div>
+              <div class="minutes count col">
+                  <div class="num">59</div>
+                  <div class="label">Минут</div>
+              </div>
+              <div class="seconds count col">
+                  <div class="num">30</div>
+                  <div class="label">Секунд</div>
+              </div>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+      
+    </div>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+    <script src="js/scramble.js"></script>
+    <script src="https://dl.dropboxusercontent.com/s/66gslprm79crnzt/bodymovin.js?dl=0"></script>
+    <script src="js/main.js"></script>
+    <script>
+      window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+      }
+    </script>
+    <script>
+        window.setTimeout(function(){
+          var animation = bodymovin.loadAnimation({
+  container: document.getElementById ('bm'),
+  render: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'https://dl.dropboxusercontent.com/s/mb8mj9rdwqumkvi/data.json'
+})
+        },500)
+    
+
+
+
+        const images = ["img-3.jpg", "img-1.jpg", "img-2.jpeg"];
+        const texts = [["БУДУЩЕЕ"],["НАДЕЖНОСТЬ"],["ОПОРА"] ];
+
+        rgbKineticSlider = new rgbKineticSlider({
+            slideImages: images,
+            itemsTitles: texts,
+
+            backgroundDisplacementSprite:
+                "http://hmongouachon.com/_demos/rgbKineticSlider/map-9.jpg",
+            cursorDisplacementSprite:
+                "http://hmongouachon.com/_demos/rgbKineticSlider/displace-circle.png",
+            cursorScaleIntensity: 0.6,
+            cursorMomentum: 0.14,
+
+            swipe: true,
+            swipeDistance: window.innerWidth * 0.4,
+            swipeScaleIntensity: 2,
+
+            slideTransitionDuration: 0.8,
+            transitionScaleIntensity: 30,
+            transitionScaleAmplitude: 160,
+
+            nav: true,
+            navElement: ".main-nav",
+            imagesRgbEffect: false,
+            imagesRgbIntensity: 4,
+            navImagesRgbIntensity: 120,
+
+            textsDisplay: true,
+            textTitleSize: 50,
+            textsTiltEffect: true,
+            fonts: "JETBRAINS",
+            textsRgbEffect: true,
+            textsRgbIntensity: 1,
+        });
+    </script>
+  </body>
+</html>
