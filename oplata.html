@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>История платежей</title>
+</head>
+
+<body class="moiobyav oplata">
+    <div id="header"></div>
+
+    <header>
+        <div class="mainHeader">
+            <div class="container">
+                <div class="row">
+                    <a href="index.html" class="logo">
+                        Look.kg
+                    </a>
+                    <div class="poiskovik">
+                        <div class="burgr">
+                            <span><i class="fa fa-list-ul"></i></span>
+                            <div class="vsplyv">
+                                <a href="#" class="hgf">
+                                    <span><i class="fa fa-percent"></i></span>
+                                    <h5>Акции</h5>
+                                </a>
+                                <a href="#" class="hgf">
+                                    <span><i class="fa fa-percent"></i></span>
+                                    <h5>Акции</h5>
+                                </a>
+                                <a href="#" class="hgf">
+                                    <span><i class="fa fa-percent"></i></span>
+                                    <h5>Акции</h5>
+                                </a>
+                                <div class="icons">
+                                    <a href="#popup_first" class="iconBlock  popup-link">
+                                        <span><i class="fa fa-sign-in"></i></span>
+                                        <p>Войти </p>
+                                    </a>
+                                    <a href="#popup_second" class="iconBlock  popup-link">
+                                        <span><i class="fa fa-user-o"></i></span>
+                                        <p>Регистрация</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" class="poisk" placeholder="Поиск">
+                        <img src="img/Vector.png" alt="">
+                    </div>
+                    <a href="zagruzka.html" class="btn"> + Подать обьявления</a>
+                    <div class="icons">
+                        <a href="#popup_first" class="iconBlock  popup-link">
+                            <span><i class="fa fa-sign-in"></i></span>
+                            <p>Войти </p>
+                        </a>
+                        <a href="#popup_second" class="iconBlock  popup-link">
+                            <span><i class="fa fa-user-o"></i></span>
+                            <p>Регистрация</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="tipaH">
+        <div class="container">
+            <a href="#"><span><i class="fa fa-times"></i></span></a>
+            <h5>Продать быстрее</h5>
+        </div>
+    </div>
+    <div class="staticNumbers">
+        <div class="container">
+            <div id="number" class="numbers">
+                <a href="#" class="number">
+                    <p class="ttl">Баланс</p>
+                    <div class="fl">
+                        <div class="numberss" data-count="42381619">0</div>
+                        <span>USD</span>
+                    </div>
+                    <div class="hov">
+                        <p>Пополнить</p>
+                    </div>
+                </a>
+                <div class="number">
+                    <p class="ttl">Активные объявления</p>
+                    <div class="numberss numberss2" data-count="42381619">0</div>
+                </div>
+                <div class="number">
+                    <p class="ttl">Просмотры</p>
+                    <div class="numberss numberss3" data-count="42381619">0</div>
+                </div>
+                <div class="number">
+                    <p class="ttl">Контакты</p>
+                    <div class="numberss numberss4" data-count="42381619">0</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="ctnCh" id="page-wrap">
+
+
+        <div class="container">
+            <section id="main-content">
+                <div id="guts">
+                    <div class="obyav">
+                        <a href="#" class="mashina">
+                            <img src="img/170.jpg" alt="">
+                        </a>
+                        <div class="razdely">
+                            <div class="razdelenie">
+                                <div class="razdelLeft">
+                                    <div class="pros">
+                                        <p class="opesyan">
+                                            Продается 3 комнатная квартира 133 м², в ЖК "Дипломат , в скором времени".
+                                        </p>
+                                        <p class="price">13000 KGS</p>
+                                        <div class="likes">
+                                            <div class="lke" id="lke">
+                                                <span><i class="fa fa-heart"></i></span>
+                                                <span class="likecount">45</span>
+                                            </div>
+                                            <div class="prosm">
+                                                <span><i class="fa fa-eye"></i></span>
+                                                <span class="likecount">357</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pros2">
+                                        <div class="row1">
+                                            <label class="switch">
+                                                <input type="checkbox" checked />
+                                                <svg viewBox="0 0 38 24" filter="url(#goo)">
+                                                    <circle class="default" cx="12" cy="12" r="8" />
+                                                    <circle class="dot" cx="26" cy="12" r="8" />
+                                                    <circle class="drop" cx="25" cy="-1" r="2" />
+                                                </svg>
+                                            </label>
+                                            <p class="seriy">
+                                                Активный
+                                            </p>
+                                        </div>
+                                        <div class="row1">
+                                            <div><img src="img/draw 1.png" alt=""></div>
+                                            <a href="#" class="seriy">
+                                                Редактировать
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="razdelRight">
+                                    <div class="pletka">
+                                        <div class="obyed">
+                                            <a href="#" class="q q1">
+                                                <img src="img/Star 4.png" alt="">
+                                                VIP
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="obyed">
+                                            <a href="#" class="q q2">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <img src="img/fire.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                Выделить
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="obyed">
+                                            <a href="#" class="q q3">
+                                                <div>
+                                                    <img src="img/strelka.png" alt="">
+                                                </div>
+                                                Продать топ
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="obyav">
+                        <a href="#" class="mashina">
+                            <img src="img/170.jpg" alt="">
+                        </a>
+                        <div class="razdely">
+                            <div class="razdelenie">
+                                <div class="razdelLeft">
+                                    <div class="pros">
+                                        <p class="opesyan">
+                                            Продается 3 комнатная квартира 133 м², в ЖК "Дипломат , в скором времени".
+                                        </p>
+                                        <p class="price">13000 KGS</p>
+                                        <div class="likes">
+                                            <div class="lke" id="lke">
+                                                <span><i class="fa fa-heart"></i></span>
+                                                <span class="likecount">45</span>
+                                            </div>
+                                            <div class="prosm">
+                                                <span><i class="fa fa-eye"></i></span>
+                                                <span class="likecount">357</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pros2">
+                                        <div class="row1">
+                                            <label class="switch">
+                                                <input type="checkbox" checked />
+                                                <svg viewBox="0 0 38 24" filter="url(#goo)">
+                                                    <circle class="default" cx="12" cy="12" r="8" />
+                                                    <circle class="dot" cx="26" cy="12" r="8" />
+                                                    <circle class="drop" cx="25" cy="-1" r="2" />
+                                                </svg>
+                                            </label>
+                                            <p class="seriy">
+                                                Активный
+                                            </p>
+                                        </div>
+                                        <div class="row1">
+                                            <div><img src="img/draw 1.png" alt=""></div>
+                                            <a href="#" class="seriy">
+                                                Редактировать
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="razdelRight">
+                                    <div class="pletka">
+                                        <div class="obyed">
+                                            <a href="#" class="q q1">
+                                                <img src="img/Star 4.png" alt="">
+                                                VIP
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="obyed">
+                                            <a href="#" class="q q2">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <img src="img/fire.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                Выделить
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="obyed">
+                                            <a href="#" class="q q3">
+                                                <div>
+                                                    <img src="img/strelka.png" alt="">
+                                                </div>
+                                                Продать топ
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="obyav">
+                        <a href="#" class="mashina">
+                            <img src="img/170.jpg" alt="">
+                        </a>
+                        <div class="razdely">
+                            <div class="razdelenie">
+                                <div class="razdelLeft">
+                                    <div class="pros">
+                                        <p class="opesyan">
+                                            Продается 3 комнатная квартира 133 м², в ЖК "Дипломат , в скором времени".
+                                        </p>
+                                        <p class="price">13000 KGS</p>
+                                        <div class="likes">
+                                            <div class="lke" id="lke">
+                                                <span><i class="fa fa-heart"></i></span>
+                                                <span class="likecount">45</span>
+                                            </div>
+                                            <div class="prosm">
+                                                <span><i class="fa fa-eye"></i></span>
+                                                <span class="likecount">357</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pros2">
+                                        <div class="row1">
+                                            <label class="switch">
+                                                <input type="checkbox" checked />
+                                                <svg viewBox="0 0 38 24" filter="url(#goo)">
+                                                    <circle class="default" cx="12" cy="12" r="8" />
+                                                    <circle class="dot" cx="26" cy="12" r="8" />
+                                                    <circle class="drop" cx="25" cy="-1" r="2" />
+                                                </svg>
+                                            </label>
+                                            <p class="seriy">
+                                                Активный
+                                            </p>
+                                        </div>
+                                        <div class="row1">
+                                            <div><img src="img/draw 1.png" alt=""></div>
+                                            <a href="#" class="seriy">
+                                                Редактировать
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="razdelRight">
+                                    <div class="pletka">
+                                        <div class="obyed">
+                                            <a href="#" class="q q1">
+                                                <img src="img/Star 4.png" alt="">
+                                                VIP
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="obyed">
+                                            <a href="#" class="q q2">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <img src="img/fire.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                Выделить
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="obyed">
+                                            <a href="#" class="q q3">
+                                                <div>
+                                                    <img src="img/strelka.png" alt="">
+                                                </div>
+                                                Продать топ
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="obyav">
+                        <a href="#" class="mashina">
+                            <img src="img/170.jpg" alt="">
+                        </a>
+                        <div class="razdely">
+                            <div class="razdelenie">
+                                <div class="razdelLeft">
+                                    <div class="pros">
+                                        <p class="opesyan">
+                                            Продается 3 комнатная квартира 133 м², в ЖК "Дипломат , в скором времени".
+                                        </p>
+                                        <p class="price">13000 KGS</p>
+                                        <div class="likes">
+                                            <div class="lke" id="lke">
+                                                <span><i class="fa fa-heart"></i></span>
+                                                <span class="likecount">45</span>
+                                            </div>
+                                            <div class="prosm">
+                                                <span><i class="fa fa-eye"></i></span>
+                                                <span class="likecount">357</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pros2">
+                                        <div class="row1">
+                                            <label class="switch">
+                                                <input type="checkbox" checked />
+                                                <svg viewBox="0 0 38 24" filter="url(#goo)">
+                                                    <circle class="default" cx="12" cy="12" r="8" />
+                                                    <circle class="dot" cx="26" cy="12" r="8" />
+                                                    <circle class="drop" cx="25" cy="-1" r="2" />
+                                                </svg>
+                                            </label>
+                                            <p class="seriy">
+                                                Активный
+                                            </p>
+                                        </div>
+                                        <div class="row1">
+                                            <div><img src="img/draw 1.png" alt=""></div>
+                                            <a href="#" class="seriy">
+                                                Редактировать
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="razdelRight">
+                                    <div class="pletka">
+                                        <div class="obyed">
+                                            <a href="#" class="q q1">
+                                                <img src="img/Star 4.png" alt="">
+                                                VIP
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="obyed">
+                                            <a href="#" class="q q2">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <img src="img/fire.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                Выделить
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="obyed">
+                                            <a href="#" class="q q3">
+                                                <div>
+                                                    <img src="img/strelka.png" alt="">
+                                                </div>
+                                                Продать топ
+                                            </a>
+                                            <div class="dstv">
+                                                <div class="minus">
+                                                    -
+                                                </div>
+                                                <span class="chis">
+                                                    450
+                                                </span>
+                                                <div class="plus">
+                                                    +
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="section1">
+            <div class="container">
+                <div class="row">
+                    <div class="coll-lg-3 ">
+                        <a href="/index.html" class="fast">
+                            <img src="img/167_preview 1.png" alt="">
+                            <strong>Продаю ВАЗ (ЛАДА) 2107</strong>
+                            <p>Состояние хорошее, без ржавчины и коррозии...</p>
+                            <hr>
+                            <div class="ou">
+                                <h5 class="price">13000 KGS</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="coll-lg-3 ">
+                        <a href="/index.html" class="fast">
+                            <img src="img/167_preview 1.png" alt="">
+                            <strong>Продаю ВАЗ (ЛАДА) 2107</strong>
+                            <p>Состояние хорошее, без ржавчины и коррозии...</p>
+                            <hr>
+                            <div class="ou">
+                                <h5 class="price">13000 KGS</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="coll-lg-3 ">
+                        <a href="/index.html" class="fast">
+                            <img src="img/167_preview 1.png" alt="">
+                            <strong>Продаю ВАЗ (ЛАДА) 2107</strong>
+                            <p>Состояние хорошее, без ржавчины и коррозии...</p>
+                            <hr>
+                            <div class="ou">
+                                <h5 class="price">13000 KGS</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="coll-lg-3 ">
+                        <a href="/index.html" class="fast">
+                            <img src="img/167_preview 1.png" alt="">
+                            <strong>Продаю ВАЗ (ЛАДА) 2107</strong>
+                            <p>Состояние хорошее, без ржавчины и коррозии...</p>
+                            <hr>
+                            <div class="ou">
+                                <h5 class="price">13000 KGS</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6">
+                    <div>
+                        <span class="seriy">Всего</span>
+                        <span class="pric">1350 KGS</span>
+                    </div>
+                    <a href="#" class="btn asddd">Оплатить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="content">
+            <div class="content-1 active">
+                <div>
+                    <div class="centr">
+                        <h6>Самые натуральные способы оплате</h6>
+                    </div>
+                    <div class="grid2">
+                        <a href="#" class="bloch">
+                            <img src="img/55 1.png" alt="">
+                            <p class="shr">MASTERCARD VISA</p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/Elkart-logo-1024x745 (1) 1.png" alt="">
+                            <p class="shr">ELCARD </p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/unnamed 1.png" alt="">
+                            <p class="shr">ELSOM</p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/unnamed (3) 1.png" alt="">
+                            <p class="shr">ELSOM</p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/unnamed (5) 1.png" alt="">
+                            <p class="shr">О!ДЕНГИ</p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/finansy-balans-koshelek 1.png" alt="">
+                            <p class="shr">PAY 24</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="container">
+        <div class="content">
+            <div class="content-1 active">
+                <div>
+                    <h3>Пополнение</h3>
+                    <div class="grid">
+                        <div class="firs">
+                            <h6>Сумма к пополнене</h6>
+                            <div>34 555 KGS</div>
+                        </div>
+                        <div class="firs">
+                            <h6>Лицевой счет</h6>
+                            <div>34 555 KGS</div>
+                        </div>
+                    </div>
+                    <div class="centr">
+                        <div>
+                            <img src="img/purse 1.png" alt="">
+                            <p class="ts">1.000.000 KGS</p>
+                        </div>
+                        <h6>Самые натуральные способы оплате</h6>
+                    </div>
+                    <div class="grid2">
+                        <a href="#" class="bloch">
+                            <img src="img/55 1.png" alt="">
+                            <p class="shr">MASTERCARD VISA</p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/Elkart-logo-1024x745 (1) 1.png" alt="">
+                            <p class="shr">ELCARD </p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/unnamed 1.png" alt="">
+                            <p class="shr">ELSOM</p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/unnamed (3) 1.png" alt="">
+                            <p class="shr">ELSOM</p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/unnamed (5) 1.png" alt="">
+                            <p class="shr">О!ДЕНГИ</p>
+                        </a>
+                        <a href="#" class="bloch">
+                            <img src="img/finansy-balans-koshelek 1.png" alt="">
+                            <p class="shr">PAY 24</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>   -->
+    <footer>
+        <div class="container">
+            <h5>&copy;Все права защищены</h5>
+            <h5 class="fff">+996 (0555) 096 116</h5>
+            <h5 class="fff">loook.@mail.ru</h5>
+        </div>
+    </footer>
+
+
+    <div id="popup_second" class="popup">
+        <div class="popup_body">
+            <a href="#header" class="popup_close close-popup">X</a>
+            <div class="popup_content">
+                <div class="popup_title">Регистрация</div>
+                <form action="">
+                    <h3><span><i class="fa fa-user"></i></span> Имя</h3>
+                    <input type="text" required>
+                    <h3><span><i class="fa fa-envelope"></i></span> Email</h3>
+                    <input type="email" required>
+                    <h3><span><i class="fa fa-lock"></i></span> Пароль</h3>
+                    <input type="password" required>
+                    <div class="posled">
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-vk"></i></a>
+                        <a href="#popup_first" class="btn popup-link">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popup_first" class="popup">
+        <div class="popup_body">
+            <a href="#header" class="popup_close close-popup">X</a>
+            <div class="popup_content">
+                <div class="popup_title">Регистрация</div>
+                <form action="">
+                    <h3><span><i class="fa fa-envelope"></i></span> Email</h3>
+                    <input type="email" required>
+                    <h3><span><i class="fa fa-lock"></i></span> Пароль</h3>
+                    <input type="password" required>
+                    <div class="posled">
+                        <a href="#popup_second" class="popup-link">Забыли пароль?
+                        </a>
+                        <a href="#popup_second" class="btn popup-link">Вход</a>
+                    </div>
+                    <button type="submit" class="button">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popup_thirst" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="kkk">
+                    <img src="img/Group 239.png" alt="">
+                    Активный
+                </a>
+                <a href="#" class="kkk">
+                    <img src="img/pencil.png" alt="">
+                    Редактировать
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- bottomNav -->
+    <a href="#" class="oplatit">
+        Оплатить
+    </a>
+    <div class="botnav">
+        <div class="container">
+            <a href="main.html" class="ic">
+                <span><i class="fa fa-home"></i></span>
+                Главная
+            </a>
+            <a href="#" class="ic">
+                <span><i class="fa fa-percent"></i></span>
+                Акции
+            </a>
+            <a href="#" class="ic bolshoy">
+                <span><i class="fa fa-plus"></i></span>
+            </a>
+            <a href="#" class="ic">
+                <span><i class="fa fa-envelope"></i></span>
+                Чат
+            </a>
+            <a href="#" class="ic">
+                <span><i class="fa fa-user-circle-o"></i></span>
+                Профиль
+            </a>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/numbers.js"></script>
+    <script>
+        document.querySelector('.burgr').onclick = () => {
+            document.querySelector('.vsplyv').classList.toggle('oppen')
+        }
+        const popupLinks = document.querySelectorAll('.popup-link');
+        const body = document.querySelector('body');
+        const lockPadding = document.querySelectorAll('.lock-padding')
+        let unlock = true;
+        const timeout = 1000;
+        if (popupLinks.length > 0) {
+            for (let index = 0; index < popupLinks.length; index++) {
+                const popupLink = popupLinks[index];
+                popupLink.addEventListener('click', function (e) {
+                    const popupName = popupLink.getAttribute('href').replace('#', '');
+                    const currentPopup = document.getElementById(popupName);
+                    popupOpen(currentPopup);
+                    e.preventDefault();
+                })
+            }
+        }
+        const popupCloseIcon = document.querySelectorAll('.close-popup');
+        if (popupCloseIcon.length > 0) {
+            for (let index = 0; index < popupCloseIcon.length; index++) {
+                const el = popupCloseIcon[index];
+                el.addEventListener('click', function (e) {
+                    popupClose(el.closest('.popup'));
+                    e.preventDefault();
+                })
+            }
+        }
+
+
+        function popupOpen(currentPopup) {
+            if (currentPopup && unlock) {
+                const popupActive = document.querySelector('.popup.open');
+                if (popupActive) {
+                    popupClose(popupActive, false);
+                } else {
+                    bodyLock()
+                }
+                currentPopup.classList.add('open');
+                currentPopup.addEventListener('click', function (e) {
+                    if (!e.target.closest('.popup_body')) {
+                        popupClose(e.target.closest('.popup'));
+                    }
+                })
+            }
+            document.querySelectorAll('.el').forEach(a => {
+                a.style.display = 'flex'
+            })
+        }
+
+        function popupClose(popupActive, doUnlock = true) {
+            if (unlock) {
+                popupActive.classList.remove('open');
+                if (doUnlock) {
+                    bodyUnLock();
+                }
+            }
+        }
+
+        function bodyLock() {
+            const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth - 'px';
+            for (let index = 0; index < lockPadding.length; index++) {
+                const el = lockPadding[index];
+                el.style.paddingRight = lockPaddingValue;
+            }
+            // body.style.paddingRight = lockPaddingValue;
+            body.classList.add('lock');
+            unlock = false;
+            setTimeout(function () {
+                unlock = true;
+            }, timeout);
+        }
+
+        function bodyUnLock() {
+            setTimeout(function () {
+                if (lockPadding.length > 0) {
+                    for (let index = 0; index < lockPadding.length; index++) {
+                        const el = lockPadding[index];
+                        el.style.paddingRight = '0px';
+                    }
+                }
+                body.style.paddingRight = '0px'
+                body.classList.remove('lock')
+            }, timeout);
+            unlock = false;
+            setTimeout(function () {
+                unlock = true
+            }, timeout);
+        }
+        document.addEventListener('keydown', function (e) {
+            if (e.which === 27) {
+                const popupActive = document.querySelector('.popup.open');
+                popupClose(popupActive)
+            }
+        })
+        var btmnav = $('.botnav'),
+            scrollPrev = 0;
+
+        $(window).scroll(function () {
+            var scrolled = $(window).scrollTop();
+
+            if (scrolled > 100 && scrolled > scrollPrev) {
+                btmnav.addClass('out');
+            } else {
+                btmnav.removeClass('out');
+            }
+            scrollPrev = scrolled;
+        });
+    </script>
+</body>
+
+</html>

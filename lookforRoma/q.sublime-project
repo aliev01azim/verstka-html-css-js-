@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"path": ".vscode"
+		},
+		{
+			"path": "css"
+		},
+		{
+			"path": "bootstrap-4.5.3-dist"
+		},
+		{
+			"path": "fonts"
+		},
+		{
+			"path": "img"
+		},
+		{
+			"path": "js"
+		},
+		{
+			"path": "."
+		}
+	]
+}
