@@ -1,0 +1,3 @@
+[1102/052834.240:ERROR:crashpad_client_win.cc(521)] CreateProcess: Отказано в доступе. (0x5)
+[1102/054316.621:ERROR:crashpad_client_win.cc(521)] CreateProcess: Отказано в доступе. (0x5)
+[1102/054323.308:ERROR:crashpad_client_win.cc(521)] CreateProcess: Отказано в доступе. (0x5)
