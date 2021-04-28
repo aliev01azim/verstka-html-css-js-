@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/4cac0f5f2c.js"></script>
+<style>
+.vertical-menu22 {
+    min-width: 240px;
+    overflow-y: auto;
+    background: #28256B;
+}
+body{
+  width: 100vw !important;
+    overflow-X: hidden;
+}
+.vertical-menu22 a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.fsd{
+  position: absolute;
+    text-align: 0;
+    top: 134px;
+    left: 375px;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+.vertical-menu22 a:hover {
+    background-color: #ccc;
+    color: white;
+}
+
+.vertical-menu22 a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.vertical-menu22 h1{
+  color: white;
+}
+.header{
+  float: left;
+
+}
+.wrapper {
+    display: flex;
+    position: relative;
+}
+.vertical-menu22{
+  height: 100vh;
+    position: fixed;
+}
+.vertical-menu22>div{
+  position: absolute;
+}
+.header{
+  background: #00A2FF;
+    width: 92%;
+    position: fixed;
+    z-index: 2;
+    left: 248px;
+    height: fit-content;
+ }
+ .header h1{
+  color: white;
+  margin-left: 50px;
+ }
+
+ .mdl-textfield__label {
+    bottom: 0;
+    color: rgba(0,0,0,.26);
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: -24px;
+    width: 100%;
+  
+    white-space: nowrap;
+    text-align: left;
+}
+
+.select{
+  position: relative;
+
+}
+
+.menu__item{
+
+
+}
+.menu__item i{
+  padding-right: 10px;
+}
+ul li{
+  list-style-type: none;
+ 
+
+}
+li{
+  color: #b7b7b7;
+  font-size: 16px;
+}
+
+li:hover{
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="wrapper">
+<div class="vertical-menu22" style="">
+  <div style="position: absolute;"></div>
+  <h1 style="text-align: center;">ОФД-НН</h1>
+<nav>
+  <ul>
+  <a href="#" class="menu__item"><li><i class="fa fa-home" aria-hidden="true"></i>Главная</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-bar-chart" aria-hidden="true"></i>Отчётность</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-suitcase" aria-hidden="true"></i>Организации</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-archive" aria-hidden="true"></i>Договоры</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-map-marker" aria-hidden="true"></i>Точки</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-briefcase" aria-hidden="true"></i>Кассы</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-plug" aria-hidden="true"></i>Подключение касс</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-calendar-o" aria-hidden="true"></i>Очередь событий</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-pie-chart" aria-hidden="true"></i>Финансы</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-file-text" aria-hidden="true"></i>Документы</li></a>
+  <a href="#" class="menu__item"><li><i class="fa fa-line-chart" aria-hidden="true"></i>Мониторинг</li></a>
+  <a href="#">Link 10</a></li>
+</nav>
+</div>
+
+<div class="header">
+ <div class="col-lg-12">
+  <h1>Названия Организации</h1>
+</div>
+</div>
+   </div>
+
+<div class="fsd" style="margin-left: 300px; margin-top: -460px;position: relative;">
+    <div class="row">
+      <form action="handler.php">
+
+
+      <label for="type" class="mdl-textfield__label" style="width: calc(100% - 16px)">
+                            <span>Тип</span>
+                            <span class="required"> *</span>
+                        </label>
+<select name="type" style="min-width: 240px; display: inline;">
+  <option value="" selected>АО</option>
+  <option value="">ДХО</option>
+  <option value="">ЗАО</option>
+  <option value="">ЗХО</option>
+  <option value="">ИП</option>
+  <option value="">КТ</option>
+  <option value="">МУП</option>
+  <option value="">ОАО</option>
+  <option value="">ОДО</option>
+  <option value="">ООО</option>
+  <option value="">ПТ</option>
+  <option value="">УП</option>
+  <option value="">ХТО</option>
+
+</select>
+     
+
+       <label class="mdl-textfield__label" for="inn" style="margin-left: 260px;max-width: 70px;">
+                            <span>ИНН</span>
+                            <span class="required"> *</span>
+                        </label>
+<input type="text" name="">
+
+   
+    
+  
+                        <input  name="shortName" value="" placeholder="Краткое наименование компании" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+
+     <input  name="FullName" value="" placeholder="Полное наименование компании" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+
+    <input  name="kpp" value="" placeholder="ККП" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+                      
+     
+
+
+
+
+
+<div>
+  <input type="ККП" name="" placeholder="ОГРН">   <input type="ККП" name="" placeholder="ОКПО"> 
+  </div>
+
+  <div>
+    <h1>Подписан договор</h1>
+      <input  name="FullName" value="" placeholder="ФИО" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+    <input  name="FullName" value="" placeholder="Должность" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+    <input  name="FullName" value="" placeholder="Действует на основе" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+  </div>    
+
+
+
+    <div>
+    <h1>Юридический адрес</h1>
+     <input type="ККП" name="" placeholder="Адрес">  
+      <input type="ККП" name="" placeholder="ИНН">
+    
+  </div>  
+
+
+      <div>
+    <h1>Фактический адрес</h1>
+     <input type="ККП" name="" placeholder="Адрес">  
+      <input type="ККП" name="" placeholder="ИНН">
+    
+  </div> 
+
+       <div>
+    <h1>Контактная информация</h1>
+     <input type="ККП" name="" placeholder="Телефон">  
+      <input type="ККП" name="" placeholder="Email">
+    
+  </div>
+
+
+
+      <div>
+    <h1>Банковские реквизиты</h1>
+     <input  name="FullName" value="" placeholder="Расчётный счёт" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+       <input  name="FullName" value="" placeholder="БИК" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+       <input  name="FullName" value="" placeholder="Банк" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+    <input  name="FullName" value="" placeholder="Корреспондентский счёт" style="border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);    width: calc(100% - 16px)">
+    
+  </div>
+                    
+       </form>
+    </div>
+    </div>
+
+
+
+
+
+
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
+

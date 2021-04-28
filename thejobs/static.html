@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <title>Диаграммы</title>
+</head>
+<style>
+    .asd{
+        width:80%;
+        height:300px;
+    }
+    .flex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 300px;
+    }
+</style>
+<body>
+    <div class="flex">
+        <div class="asd a1">
+            <canvas id="speedChart" width="600" height="400"></canvas>
+        </div>
+        <div class="asd a2">
+            <canvas id="speedChartt" width="600" height="400"></canvas>
+        </div>
+        <div class="asd a3">
+            <canvas id="speedCharttt" width="600" height="400"></canvas>
+        </div>
+        <div class="asd a4">
+            <canvas id="speedCharr" width="600" height="400"></canvas>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="js/diagramma.js"></script>
+</body>
+</html>

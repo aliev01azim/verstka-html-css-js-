@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/log.css">
+    <title>ОФД: Регистрация</title>
+</head>
+
+<body>
+
+    <form action="">
+        <h1>ОФД-НН</h1>
+        <div class="content">
+            <div class="header">Регистрация в ОФД: налогоплательщик</div>
+            <div class="con">
+                <div class="box">
+                    <input type="text" required placeholder="ИНН">
+                </div>
+                <div class="box">
+                    <input type="text" required placeholder="Полное наименвание компании">
+                </div>
+                <div class="footer">
+                    <a href="log.html">Отмена</a>
+                    <div>
+                        <input type="submit" value="ДАЛЕЕ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function show() {
+            var p = document.getElementById('pwd');
+            p.setAttribute('type', 'text');
+        }
+
+        function hide() {
+            var p = document.getElementById('pwd');
+            p.setAttribute('type', 'password');
+        }
+
+        var pwShown = 0;
+
+        document.getElementById("eye").addEventListener("click", function() {
+            if (pwShown == 0) {
+                pwShown = 1;
+                show();
+            } else {
+                pwShown = 0;
+                hide();
+            }
+        }, false);
+    </script>
+</body>
+
+</html>
