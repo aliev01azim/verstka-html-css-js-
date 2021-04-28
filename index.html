@@ -1,0 +1,1226 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Новая Норма | Маркировка товаров</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<style>
+    /*!
+     * chiefSlider (https://itchief.ru/lessons/php/feedback-form-for-website)
+     * Copyright 2018 Alexander Maltsev
+     * Licensed under MIT (https://github.com/itchief/feedback-form/blob/master/LICENSE)
+     */
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #fff;
+      height: 3000px;
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .slider__item {
+      flex: 0 0 33.333333%;
+      max-width: 20%;
+    }
+
+    .slider__control {
+      position: absolute;
+      top: 80%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .slider__control_show {
+      display: flex;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .slider__item>div {
+      line-height: 250px;
+      font-size: 100px;
+      text-align: center;
+    }
+    
+    .dm-overlay11 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/* активируем слой затемнения и модальное окно */
+.dm-overlay11:target {
+    display: block;
+/* анимация и время задержки */
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+.dm-overlay12 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/* активируем слой затемнения и модальное окно */
+.dm-overlay12:target {
+    display: block;
+/* анимация и время задержки */
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+
+.dm-overlay13 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/* активируем слой затемнения и модальное окно */
+.dm-overlay13:target {
+    display: block;
+/* анимация и время задержки */
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+
+.dm-overlay14 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/* активируем слой затемнения и модальное окно */
+.dm-overlay14:target {
+    display: block;
+/* анимация и время задержки */
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+
+  </style>
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="index.html"><img src="img/logo1.png" alt="" style="width: 150px;"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                           <ul class="nav navbar-nav menu_nav justify-content-center">
+                            <li class="nav-item active"><a class="nav-link " href="index.html">Главная</a></li>
+                              <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                 aria-expanded="false">Решения</a>
+                                <ul class="dropdown-menu">
+                                       <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Установку%20АСУ%20АЗС">Установка АСУ АЗС</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Онлайн%20ККМ">Онлайн ККМ</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20ПО%20для%20Бизнеса">ПО для бизнеса</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Маркировку%20товаров">Маркировка товаров</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Электронную%20подпись">КЭП</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Фискальный%20Накопитель">ФН</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Электронные%20чеки">Электронные чеки</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Платформу%20ЭДО">Платформа ЭДО</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Облачную%20кассу">Облачные кассы</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Платформу%20Госотчет">Платформа Госотчет</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Платформа%20аренда">Платформа аренда</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#" style="font-size:10px;">Мобильное приложение</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Решения%201С">Решения 1С</a></li>
+                               
+                                        
+                                </ul>
+                            </li>
+                           
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Оборудование</a>
+                             <li class="nav-item"><a class="nav-link" href="http://www.edo.kg">ЭДО</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><a href="tel: +996 501 588 882" class="primary_btn">Позвонить</a></li>
+                        </ul>
+                        <ul>
+							<li  style=" list-style-type: none;"><a class=""  style="color: white;" href="#">Рус</a></li>
+							<li style=" list-style-type: none;"><a class=""  style="color: white;" href="#">Кырг</a></li>
+						</ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>	<!--================Header Menu Area =================-->
+
+	<!--================Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="home_left_img">
+							<img class="img-fluid" src="img/banner/home-left.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="banner_content">
+							<h2>
+								 <br>
+								<br>
+								Автоматизируйте свой бизнес
+							</h2>
+							<p>
+								Компания 	&laquo;Новая Норма&raquo; автоматизирует бизнес-процессы, а так же предоставляет решения, которые помогают бизнесу оптимизировать затраты, увеличивать выручку и формировать своевременные и лучшие предложения для покупателей. Наша миссия сделать работу удобнее и прозрачнее.
+							</p>
+							<div class="d-flex align-items-center">
+							<a id="play-home-video" class="video-play-button" href="videoru.mp4">
+									<span></span>
+								</a>
+								<div class="watch_video text-uppercase">
+									Посмотреть видео
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Home Banner Area =================-->
+
+	<!--================Start About Us Area =================-->
+	<section class="about_us_area section_gap_top">
+		<div class="container">
+			<div class="row about_content align-items-center">
+				<div class="col-lg-6">
+					<div class="section_content">
+						<h6>Маркировка</h6>
+						<br>
+												<p>Маркировка - нанесение на упаковку или этикетку сгенерированного цифрового кода: электронного точечного двухмерного кода формата Data Matrix. <br>
+						Основной целью маркировки товаров является повышение защиты и снижение оборота фальсифицированной и контрафактной продукции.</p>
+						<a class="primary_btn" href="#">Подключить</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_us_image_box justify-content-center">
+						
+
+						<div id="level">
+		<div id="content" >
+			<div id="gears">
+				<div id="gears-static"></div>
+				<div id="gear-system-1">
+					<div class="shadow" id="shadow15"></div>
+					<div id="gear15"></div>
+					<div class="shadow" id="shadow14"></div>
+					<div id="gear14"></div>
+					<div class="shadow" id="shadow13"></div>
+					<div id="gear13"></div>
+				</div>
+				<div id="gear-system-2">
+					<div class="shadow" id="shadow10"></div>
+					<div id="gear10"></div>
+					<div class="shadow" id="shadow3"></div>
+					<div id="gear3"></div>
+				</div>
+				<div id="gear-system-3">
+					<div class="shadow" id="shadow9"></div>
+					<div id="gear9"></div>
+					<div class="shadow" id="shadow7"></div>
+					<div id="gear7"></div>
+				</div>
+				<div id="gear-system-4">
+					<div class="shadow" id="shadow6"></div>
+					<div id="gear6"></div>
+					<div id="gear4"></div>
+				</div>
+				<div id="gear-system-5">
+					<div class="shadow" id="shadow12"></div>
+					<div id="gear12"></div>
+					<div class="shadow" id="shadow11"></div>
+					<div id="gear11"></div>
+					<div class="shadow" id="shadow8"></div>
+					<div id="gear8"></div>
+				</div>
+				<div class="shadow" id="shadow1"></div>
+				<div id="gear1"></div>
+				<div id="gear-system-6">
+					<div class="shadow" id="shadow5"></div>
+					<div id="gear5"></div>
+					<div id="gear2"></div>
+				</div>
+				<div class="shadow" id="shadowweight"></div>
+				<div id="chain-circle"></div>
+				<div id="chain"></div>
+				<div id="weight"></div>
+			</div>
+		</div>
+	</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End About Us Area =================-->
+
+	<!--================First Upcoming Games Area =================-->
+<section class="frequently_area" style="margin-top: 100px; margin-bottom: 100px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<h2></h2>
+						<h1>Все для маркировки</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row frequent_inner">
+				<div class="col-lg-5 col-md-5">
+					<div class="frequent_item" style="text-align: center;"> 
+						<a href="obuv.html"><img style="margin-bottom: 0px; margin-top: 30px;" src="https://img.icons8.com/ios-filled/50/000000/sneakers.png"/>
+						<h3>Обувь</h3>
+						<p style="color:black">С 1 июля 2020 года</p></a>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
+					<div class="frequent_item" style="text-align: center;">
+					<a href="tekstil.html">	<img style="margin-bottom: 0px; margin-top: 30px;" src="https://img.icons8.com/pastel-glyph/50/000000/cloth-1--v2.png"/>
+						<h3>Текстиль</h3>
+						<p style="color:black">С 1 января 2021 года</p></a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-5">
+					<div class="frequent_item" style="text-align: center;">
+						<a href="alhocol.html"><img style="margin-bottom: 0px; margin-top: 30px;" src="https://img.icons8.com/pastel-glyph/50/000000/beer.png"/>
+						<h3>Алкоголь</h3>
+						<p style="color:black">С 1 октября 2020 года</p></a>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
+					<div class="frequent_item" style="text-align: center;">
+					<a href="milk.html"><img style="margin-bottom: 0px; margin-top: 30px;" src="https://img.icons8.com/pastel-glyph/50/000000/milk-bottle.png"/>
+						<h3>Молочное производство</h3>
+						<p style="color:black">С 1 марта 2021 года</p></a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-5">
+					<div class="frequent_item last-child" style="text-align: center;">
+						<a href="medical.html"><img style="margin-bottom: 0px; margin-top: 30px;" src="https://img.icons8.com/pastel-glyph/50/000000/prescription-pill-bottle.png"/>
+						<h3>Лекарства</h3>
+						<p style="color:black">С 1 июля 2020 года</p></a>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5">
+					<div class="frequent_item last-child" style="text-align: center;">
+						<a href="tabacoo.html"><img style="margin-bottom: 0px; margin-top: 30px;" src="https://img.icons8.com/ios/50/000000/cigar.png"/>
+						<h3>Табачные изделия</h3>
+						<p style="color:black">С 1 июля 2020 года</p></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--================End Upcoming Games Area =================-->
+
+	<!--================Start Recent Update Area =================-->
+	<section class="recent_update_area section_gap">
+		<div class="container">
+			<div class="recent_update_inner">
+				
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row recent_update_text">
+							<div class="col-lg-6">
+								<div class="chart_img" style="margin-top: 250px;">
+									
+
+<div class="text">
+ 	 Подключение
+</div>
+<div class="box">
+  <div class="comp"></div>
+  <div class="loader"></div>
+  <div class="con"></div>
+  <div class="byte"></div>
+  <div class="server"></div>
+</div>
+
+
+
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="section_content">
+									<h6>ОФД - Оператор фискальных данных</h6>
+								<br>
+									<p style="font-size: 16px;">ОФД-НН обеспечивает удобный и надежный сервис обработки и передачи фискальных данных, систематизирует хранение данных.
+									</p>
+									<a class="primary_btn" href="tel:+996501588882">Подключить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="row recent_update_text">
+							<div class="col-lg-6">
+								<div class="chart_img" style="margin-top: 250px;">
+									
+
+<div class="text">
+ 	 Подключение
+</div>
+<div class="box">
+  <div class="comp"></div>
+  <div class="loader"></div>
+  <div class="con"></div>
+  <div class="byte"></div>
+  <div class="server"></div>
+</div>
+
+
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="section_content">
+									<h6>АСУ</h6>
+									<h1>АСУ - Автоматическая система управления</h1>
+									<p>Подключение АСУ производится нашими специалистами, от вас требуется перечень следующих документов <a href="">(Скачать)</a> . <br> Если вы хотите подключить пожалуйста свяжитесь с нами.</p>
+									<a class="primary_btn" href="tel:+996501588882">Позвонить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="row recent_update_text">
+							<div class="col-lg-6">
+								<div class="chart_img" style="margin-top: 250px;">
+									
+
+
+<div class="text">
+ 	 Подключение
+</div>
+<div class="box">
+  <div class="comp"></div>
+  <div class="loader"></div>
+  <div class="con"></div>
+  <div class="byte"></div>
+  <div class="server"></div>
+</div>
+
+
+
+								</div>
+							</div>
+							<div class="col-lg-6" >
+								<div class="section_content">
+									<h6>Онлайн ККМ</h6>
+									<h1>ККМ - Контрольно кассовая машина</h1>
+									<p>Установка и подключение ККМ производится нашими специалистами, от вас требуется перечень следующих документов <a href="">(Скачать)</a> . <br> Если вы хотите подключить пожалуйста свяжитесь с нами.</p>
+									<a class="primary_btn" href="tel:+996501588882">Позвонить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!--================End Recent Update Area =================-->
+
+
+	<!--================ Start Gallery Area =================-->
+	<section class="blog_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title">
+						<h2></h2>
+						<h1 style="margin-top:20px;">Онлайн ККМ</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="blog_items">
+						<div class="blog_img_box" style="margin-bottom: 50px;">
+							<a href="#win2" class="btn"><img class="img-fluid" src="img/shop/15.png" alt=""></a>
+						</div>
+						<div class="blog_content" style="text-align: center;">
+							<a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20ККМ%20Viki%20Micro">Viki Micro</a>
+							<p>Viki Micro — это компактная сенсорная касса. Миниатюрный системный блок работает с внешним печатающим устройством Viki Print и сканером 1D или 2D.
+</p>
+							<div class="date">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="dm-overlay1" id="win2">
+    <div class="dm-table">
+        <div class="dm-cell">
+            <div class="dm-modal">
+                <a href="#close" class="close"></a>
+                <h3 style="color: black; margin-left:10px;text-align: center;">Viki Micro</h3>
+                <div class="pl-left">
+                    <img src="img/modal/15.png">
+                </div>
+                <p style="color: black;">Предустановленное программное обеспечение позволяет проводить приемку и продажу алкоголя, а также автоматически заполнять алкогольный журнал по требованиям ЕГАИС.</p>
+                <p style="color: black;">Комплект Viki Micro совместим с товароучетной системой 1С.</p>
+                <p style="color: black;">Возможности кассовой программы:</p>
+
+<ul>
+	
+<li style="color: black;">До 80 кнопок быстрого доступа</li>
+
+<li style="color: black;">Ограничение продаж алкоголя по времени</li>
+
+ <li style="color: black;">Поиск товаров по названию</li>
+
+ <li style="color: black;">Поиск товаров по артикулу</li>
+
+ <li style="color: black;">Загрузка скидок из товароучетных систем</li>
+  <li style="color: black;">Загрузка и выгрузка товаров в Excel</li>
+   <li style="color: black;">Режим суммирующей кассы</li>
+    <li style="color: black;">Возврат любой позиции в чеке</li>
+     <li style="color: black;">Вскрытие тары</li>
+      <li style="color: black;">Разграничение прав пользователей на кассе</li>
+</ul>
+ <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20ККМ%20Viki%20Micro">Заказать</a>
+            </div>
+        </div>
+    </div>
+</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog_items">
+						<div class="blog_img_box" style="margin-bottom: 50px;">
+							<a href="#win1" class="btn"><img class="img-fluid" src="img/shop/16.png" alt=""></a>
+						</div>
+						<div class="blog_content" style="text-align: center;">
+							<a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20ККМ%20Viki%20Tower.">Viki Tower</a>
+							<p>Кассовый аппарат Viki Tower — это полностью укомплектованное рабочее место кассира. Касса быстро печатает и автоматически отрезает чеки.</p>
+							<div class="date">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="dm-overlay" id="win1">
+    <div class="dm-table">
+        <div class="dm-cell">
+            <div class="dm-modal">
+                <a href="#close" class="close"></a>
+                <h3 style="color: black; margin-left:10px;text-align: center;">Viki Tower</h3>
+                <div class="pl-left">
+                    <img src="img/modal/16.png">
+                </div>
+                <p style="color: black;">Касса Viki Tower соответствует требованиям новых правил торговли:</p>
+
+<ul>
+	
+<li style="color: black;">Программное обеспечение совместимо и передает чеки всем Операторам фискальных данных (ОФД);</li>
+
+<li style="color: black;">Фискальный накопитель установлен в корпус ККТ Viki Tower;</li>
+
+ <li style="color: black;">В интерфейсе есть возможность ввода электронной почты и номера телефона для отправки электронного чека покупателю;</li>
+
+ <li style="color: black;">Устройство выдерживает непрерывное подключение к интернету.
+</li>
+</ul>
+
+<p style="color: black;">Комплектация кассы Viki Tower</p>
+<ul>
+ <li style="color: black;">Сенсорный моноблок (10 или 15 дюймов)</li>
+  <li style="color: black;">Кассовая программа Start</li>
+   <li style="color: black;">Встроенный принтер чеков или онлайн-ККМ</li>
+    <li style="color: black;">Встроенный дисплей покупателя Дополнительно:</li>
+     <li style="color: black;">Сканер штрих-кодов Datalogic (1D или 2D)</li>
+      <li style="color: black;">Денежный ящик</li>
+</ul>
+ <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20ККМ%20Viki%20Tower.">Заказать</a>
+            </div>
+        </div>
+    </div>
+</div>
+				<div class="col-lg-4 hidden-md">
+					<div class="blog_items">
+						<div class="blog_img_box" style="margin-bottom: 50px;">
+							<a href="#win3" class="btn"><img class="img-fluid" src="img/shop/17.png" alt=""></a>
+						</div>
+						<div class="blog_content" style="text-align: center;">
+							<a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20ККМ%20Касса%20Ф.">Касса Ф</a>
+							<p>Новая онлайн-касса с привычной клавиатурой. <br> Кнопочный смарт-терминал для розницы, интернет-магазинов и сферы услуг.</p>
+							<div class="date">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dm-overlay3" id="win3">
+    <div class="dm-table">
+        <div class="dm-cell">
+            <div class="dm-modal">
+                <a href="#close" class="close"></a>
+                <h3 style="color: black; margin-left:10px;text-align: center;">Касса Ф</h3>
+                <div class="pl-left">
+                    <img src="img/modal/17.png">
+                </div>
+                <p style="color: black; font-weight: bold;">Все для безошибочных продаж</p>
+                <ul>
+                	<li style="color: black;">Защита от штрафов</li>
+                	<li style="color: black;">Подсказки для кассира</li>
+                	<li style="color: black;">Кнопочная клавиатура</li>
+                </ul>
+
+
+<p style="color: black;">Касса Ф имеет:</p>
+
+<ul>
+	<li style="color: black;">Регистрация и найстройка без компьютера</li>
+	<li style="color: black;">Загрузка товаров через личный кабинет, из 1С</li>
+	<li style="color: black;">Неограниченная база товаров</li>
+	<li style="color: black;">Приемка маркированных товаров</li>
+	<li style="color: black;">Поиск товаров по наименованию</li>
+	<li style="color: black;">Работа с интернет-магазином</li>
+	<li style="color: black;">Неограниченное число кассиров</li>
+</ul>
+
+
+ <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20ККМ%20Касса%20Ф.">Заказать</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+					<div class="main_title">
+						<h2></h2>
+						<h1 style="margin-top:100px;">Фискальный накопитель</h1>
+					</div>
+				</div>
+
+
+<div class="col-lg-4 col-md-6">
+					<div class="blog_items">
+						<div class="blog_img_box" style="margin-bottom: 50px;">
+							<a href="#win11" class="btn"><img class="img-fluid" src="img/shop/18.png" alt=""></a>
+						</div>
+						<div class="blog_content" style="text-align: center;">
+							<a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20Эватор%20ФН%20-%2011%20/%2015">Эватор ФН-11/15</a>
+							<p>ФН обеспечивает запись фискальных данных, формирование и проверку фискальных признаков, шифрование данных для передачи оператору фискальных данных.</p>
+							<div class="date">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+	<div class="dm-overlay11" id="win11">
+	    <div class="dm-table">
+	        <div class="dm-cell">
+	            <div class="dm-modal">
+	                <a href="#close" class="close"></a>
+	                <h3 style="color: black; margin-left:10px;text-align: center;">Эватор ФН-11/15</h3>
+	                <div class="pl-left">
+	                    <img src="img/modal/18.png">
+	                </div>
+	                <p style="color: black;"> Накопитель предназначается для всех категорий предпринимателей на всех типах системы налогообложения (СНО).</p>
+	                <p style="color: black;"> Купить фискальный накопитель Вы можете как во время приобретения кассового аппарата, регистрации ККМ или отдельно от кассовой техники.</p>
+	
+	
+	                
+	
+	
+	 <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201%20">Заказать</a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog_items">
+						<div class="blog_img_box" style="margin-bottom: 50px;">
+							<a href="#win12" class="btn"><img class="img-fluid" src="img/shop/19.png" alt=""></a>
+						</div>
+						<div class="blog_content" style="text-align: center;">
+							<a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201%20.%201%20.">Фискальный накопитель ФН-1.1</a>
+							<p>Новый фискальный накопитель версии 1.1. Данная версия фискального накопителя поддерживает все существующие сейчас форматы фискальных документов.</p>
+							<div class="date">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+<div class="dm-overlay12" id="win12">
+    <div class="dm-table">
+        <div class="dm-cell">
+            <div class="dm-modal">
+                <a href="#close" class="close"></a>
+                <h3 style="color: black; margin-left:10px;text-align: center;">Фискальный накопитель ФН-1.1</h3>
+                <div class="pl-left">
+                    <img src="img/modal/19.png">
+                </div>
+                <p style="color: black;">Фискальный накопитель ФН-1.1 обладает увеличенной памятью и рассчитан на 15 месяцев использования.</p>
+
+<p style="color: black;">Правда, последнее условие работает только в режиме передачи фискальных данных в ОФД без продажи подакцизных товаров.</p>
+
+<p style="color: black;">Во всех остальных случаях фискальный накопитель версии 1.1 будет работать в течении 13 месяцев.</p>
+
+<p style="color: black;">Перед приобретением этой версии ФН советуем проконсультироваться с разработчиком Вашей контрольно-кассовой техники на предмет совместимости.</p>
+
+ <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201%20.%201%20.">Заказать</a>
+            </div>
+        </div>
+    </div>
+</div>
+				<div class="col-lg-4 hidden-md">
+					<div class="blog_items">
+						<div class="blog_img_box" style="margin-bottom: 50px;">
+							<a href="#win13" class="btn"><img class="img-fluid" src="img/shop/20.png" alt=""></a>
+						</div>
+						<div class="blog_content" style="text-align: center;">
+							<a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201.">Фискальный накопитель ФН-1.1</a>
+							<p>Данная модель фискального накопителя (ФН-1.1\36) предназначен для предпринимателей на упрощенной системе налогообложения (УСМ), патентах и ЕНВД.</p>
+							<div class="date">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="dm-overlay13" id="win13">
+			    <div class="dm-table">
+			        <div class="dm-cell">
+			            <div class="dm-modal">
+			                <a href="#close" class="close"></a>
+			                <h3 style="color: black; margin-left:10px;text-align: center;">Фискальный накопитель ФН-1.1</h3>
+			                <div class="pl-left">
+			                    <img src="img/modal/20.png">
+			                </div>
+			                <p style="color: black;">Срок действия данного фискального накопителя составляет 36 месяцев.</p>
+			
+			<p style="color: black;">ФН подойдет ко всем типа контрольно-кассовой техники работающей по ФЗ-54.</p>
+			
+			
+			 <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201.">Заказать</a>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			</div>
+		</div>
+		
+	</section>	<!--================ End Gallery Area =================-->
+
+
+	<!--========== Start Testimonials Area ==================-->
+
+	<!--================ End Testimonials Area ================-->
+
+
+	<!--================ Start Pricing Plans Area ================-->
+	<!-- <section class="blog_area">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-lg-12">
+	                <div class="main_title">
+	                    <h2></h2>
+	                    <h1 style="margin-top:20px;">Фискальный накопитель</h1>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="col-lg-4 col-md-6">
+	                <div class="blog_items">
+	                    <div class="blog_img_box" style="margin-bottom: 50px;">
+	                        <a href="#win11" class="btn"><img class="img-fluid" src="img/shop/12.png" alt=""></a>
+	                    </div>
+	                    <div class="blog_content" style="text-align: center;">
+	                        <a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201%20">Фискальный накопитель ФН-1 </a>
+	                        <p>Фискальный накопитель ФН-1 производства ООО "РиК" рассчитанный на 13 месяцев работы. Требуется для передачи данных в налоговую инспекцию онлайн. 
+	                        <div class="date">
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	
+	            <div class="dm-overlay11" id="win11">
+	    <div class="dm-table">
+	        <div class="dm-cell">
+	            <div class="dm-modal">
+	                <a href="#close" class="close"></a>
+	                <h3 style="color: black; margin-left:10px;text-align: center;">Фискальный накопитель ФН-1 </h3>
+	                <div class="pl-left">
+	                    <img src="img/modal/14.png">
+	                </div>
+	                <p style="color: black;"> Накопитель предназначается для всех категорий предпринимателей на всех типах системы налогообложения (СНО).</p>
+	                <p style="color: black;"> Купить фискальный накопитель Вы можете как во время приобретения кассового аппарата, регистрации ККТ или отдельно от кассовой техники.</p>
+	
+	
+	                
+	
+	
+	 <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201%20">Заказать</a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	            <div class="col-lg-4 col-md-6">
+	                <div class="blog_items">
+	                    <div class="blog_img_box" style="margin-bottom: 50px;">
+	                        <a href="#win12" class="btn"><img class="img-fluid" src="img/shop/13.png" alt=""></a>
+	                    </div>
+	                    <div class="blog_content" style="text-align: center;">
+	                        <a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201%20.%201%20.">Фискальный накопитель ФН-1.1</a>
+	                        <p>Новый фискальный накопитель версии 1.1. Данная версия фискального накопителя поддерживает все существующие сейчас форматы фискальных документов.</p>
+	                        <div class="date">
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	
+	            <div class="dm-overlay12" id="win12">
+	    <div class="dm-table">
+	        <div class="dm-cell">
+	            <div class="dm-modal">
+	                <a href="#close" class="close"></a>
+	                <h3 style="color: black; margin-left:10px;text-align: center;">Фискальный накопитель ФН-1.1</h3>
+	                <div class="pl-left">
+	                    <img src="img/modal/13.png">
+	                </div>
+	                <p style="color: black;">Фискальный накопитель ФН-1.1 обладает увеличенной памятью и рассчитан на 15 месяцев использования.</p>
+	
+	<p style="color: black;">Правда, последнее условие работает только в режиме передачи фискальных данных в ОФД без продажи подакцизных товаров.</p>
+	
+	<p style="color: black;">Во всех остальных случаях фискальный накопитель версии 1.1 будет работать в течении 13 месяцев.</p>
+	
+	<p style="color: black;">Перед приобретением этой версии ФН советуем проконсультироваться с разработчиком Вашей контрольно-кассовой техники на предмет совместимости.</p>
+	
+	 <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201%20.%201%20.">Заказать</a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	            <div class="col-lg-4 hidden-md">
+	                <div class="blog_items">
+	                    <div class="blog_img_box" style="margin-bottom: 50px;">
+	                        <a href="#win13" class="btn"><img class="img-fluid" src="img/shop/14.png" alt=""></a>
+	                    </div>
+	                    <div class="blog_content" style="text-align: center;">
+	                        <a class="title" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201.">Фискальный накопитель ФН-1</a>
+	                        <p>Данная модель фискального накопителя (ФН-1\36) предназначен для предпринимателей на упрощенной системе налогообложения (УСМ), патентах и ЕНВД.</p>
+	                        <div class="date">
+	                            
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="dm-overlay13" id="win13">
+	    <div class="dm-table">
+	        <div class="dm-cell">
+	            <div class="dm-modal">
+	                <a href="#close" class="close"></a>
+	                <h3 style="color: black; margin-left:10px;text-align: center;">Фискальный накопитель ФН-1</h3>
+	                <div class="pl-left">
+	                    <img src="img/modal/12.png">
+	                </div>
+	                <p style="color: black;">Срок действия данного фискального накопителя составляет 36 месяцев.</p>
+	
+	<p style="color: black;">ФН подойдет ко всем типа контрольно-кассовой техники работающей по ФЗ-54.</p>
+	
+	
+	 <a class="zakaz" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20купить%20у%20вас%20Фискальный%20накопитель%20ФН%20-%201.">Заказать</a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	        </div>
+	    </div>
+	    
+	</section> -->
+	<!--================ End Pricing Plans Area ================-->
+	<div class="container">
+ <div class="slider" style="margin-bottom:50px;">
+ 	<h1 style="color: black; text-align: center; margin-bottom:50px;">Партнеры</h1>
+
+    <div class="slider__wrapper">
+      <div class="slider__item">
+        <a href="https://www.trekmark.ru"><img src="img/1.png"></a>
+      </div>
+      <div class="slider__item">
+       <a href="https://sbis.ru"><img src="img/2.png"></a>
+      </div>
+      <div class="slider__item">
+        <a href="https://xn----itbeqggh1bza.xn--p1ai"><img src="img/3.png"></a>
+      </div>
+      <div class="slider__item">
+        <a href="https://www.rightscan.ru"><img src="img/4.png"></a>
+      </div>
+      <div class="slider__item">
+        <a href="https://dreamkas.ru/"><img src="img/5.png"></a>
+      </div>
+      <div class="slider__item">
+        <a href="lora.kg"><img src="img/6.png"></a>
+      </div>
+      <div class="slider__item">
+        <a href="http://eurasiakg.com"><img src="img/7.png"></a>
+      </div>
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+  </div>
+</div>
+
+	<!--================ Start Frequently Asked Questions Area ================-->
+	
+	<!--================ End Frequently Asked Questions Area ================-->
+
+	<!--================ Start Blog Area ================-->
+	
+	<!--================ End Blog Area ================-->
+
+	<!--================ Start Newsletter Area ================-->
+	<section class="newsletter_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="newsletter_inner">
+						<h1>Оставьте свой номер телефона</h1>
+						<p>Наши специалисты свяжутся с вами <span style="color: red;"></span></p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<aside class="newsletter_widget">
+						<div id="mc_embed_signup">
+							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+							 method="get" class="subscribe_form relative">
+								<div class="input-group d-flex flex-row">
+									<input name="EMAIL" placeholder="Ваш номер телефона " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Вы не ввели номер телефона'"
+									 required="" type="email">
+									<button class="btn primary_btn">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Newsletter Area ================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area section_gap_top">
+		<div class="container">
+			<div class="row footer_inner">
+				<div class="col-lg-3 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h4 style="">Новая Норма</h4>
+						</div>
+						<p style="color: rgba(255, 255, 255, 0.5); width: 220px;">
+    Компания является интегратором и провайдером облачных сервисов для автоматизации процессов управления цепочками поставок и взаиморасчетов. Важным направлением работы компании является участие в строительстве цифровой ЭКО-системы.</p>
+					</aside>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h4 style="">Драйвера</h4>
+						</div>
+						<ul>
+							<li style=""><a href="drivers/drivers.rar" download style="color: rgba(255, 255, 255, 0.5);">Штрих-Light</a></li><a href="#">
+								<li style=""><a href="#" download style="color: rgba(255, 255, 255, 0.5);">Атол
+							</a></li>
+							<li style=""><a href="#" download style="color: rgba(255, 255, 255, 0.5);">Альфа АЗС 2.8
+							</a></li>
+							<!-- <li><a href="#"></a>Founding Members</a></li>
+							<li><a href="#"></a>Case Studies</a></li>
+							<li><a href="#"></a>Product Updates</a></li> -->
+						</ul>
+					</aside>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h4 style="">Навигация</h4>
+						</div>
+						<ul>
+							<li style=""><a href="index.html" style="color: rgba(255, 255, 255, 0.5);">Главная</a></li><a href="#">
+							    <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                 aria-expanded="false" style="color: rgba(255, 255, 255, 0.5); margin-left: -15px;">Решения</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Установку%20АСУ%20АЗС">Установка АСУ АЗС</a>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Онлайн%20ККМ">Онлайн ККМ</a>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20ПО%20для%20Бизнеса">ПО для бизнеса</a>
+                                    <li class="nav-item"><a class="nav-link" href="https://wa.me/+996708700700?text=Здравствуйте.%20Хочу%20заказать%20у%20вас%20Маркировку%20товаров">Маркировка товаров</a>
+                                </ul>
+                            </li>
+							<li style=""><a href="gallery.html" style="color: rgba(255, 255, 255, 0.5);">Оборудование</a></li>
+							<li style=""><a href="http://www.edo.kg" style="color: rgba(255, 255, 255, 0.5);">ЭДО</a></li>
+							<li style=""><a href="contact.html" style="color: rgba(255, 255, 255, 0.5);">Контакты</a></li>
+							<!-- <li><a href="#"></a>Resources</a></li> -->
+						</ul>
+					</aside>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h4 style="">Контакты</h4>
+						</div>
+						<ul>
+							<li style=" font-size: 14px;"><a href="#" style="color: rgba(255, 255, 255, 0.5);">Адрес:<br>
+Кыргызская Республика , 720082, <br>г.Бишкек, Кок-Жар, ул.Шоокум, 73</a></li>
+							<li style=" font-size: 18px;"><a href="tel:+996501588882" style="color: rgba(255, 255, 255, 0.5);">+996 (501) 588-882</a></li>
+							<li style=" font-size: 18px;"><a href="tel:+996550830532" style="color: rgba(255, 255, 255, 0.5);">+996 (550) 830-532</a></li>
+							<li style=" font-size: 18px;"><a href="tel:+996708700700" style="color: rgba(255, 255, 255, 0.5);">+996 (708) 700-700</a></li>
+						
+
+												<!-- <ul>
+							<li style="text-align: center;">Адрес:<br>Кыргызская Республика, 720082,
+г.Бишкек, ул.Шоокум 72.</a></li><a href="#">
+								<li style="text-align: center;">Номера телефонов:
+							</li>
+							<li><a href="#"></a>Cookie Information</a></li>
+							<li><a href="#"></a>Opt - Out</a></li>
+						</ul>
+ -->					</aside>
+				</div>
+			</div>
+			<div class="row single-footer-widget">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="copy_right_text">
+						<p ><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							ГК "Новая Норма"
+ &copy;<script>document.write(new Date().getFullYear());</script> . Все права защищены
+ <span style="color:red;">версия 1.0.2.0</span>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+ <script>
+    'use strict';
+    var multiItemSlider = (function () {
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = []; // массив элементов
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var position = {
+          getMin: 0,
+          getMax: _items.length - 1,
+        }
+
+        var _transformItem = function (direction) {
+          if (direction === 'right') {
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+              return;
+            }
+            if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+              _sliderControlLeft.classList.add('slider__control_show');
+            }
+            if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+              _sliderControlRight.classList.remove('slider__control_show');
+            }
+            _positionLeftItem++;
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            if (_positionLeftItem <= position.getMin) {
+              return;
+            }
+            if (!_sliderControlRight.classList.contains('slider__control_show')) {
+              _sliderControlRight.classList.add('slider__control_show');
+            }
+            if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+              _sliderControlLeft.classList.remove('slider__control_show');
+            }
+            _positionLeftItem--;
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+          }
+        };
+
+        var _setUpListeners = function () {
+          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+          _sliderControls.forEach(function (item) {
+            item.addEventListener('click', _controlClick);
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider')
+
+  </script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
